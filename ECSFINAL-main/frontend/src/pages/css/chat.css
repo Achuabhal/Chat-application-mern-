@@ -1,0 +1,125 @@
+body {
+    margin: 0px;
+    color: white;
+  }
+  
+  .spot-container {
+    width: 90%;
+    height: 96%;
+    border-radius: 16px;
+    border: rgba(255, 255, 255, 0.05) 2px solid;
+    background-color: #1F1F1F;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .spot-header {
+    text-align: center;
+  }
+  
+  .spot-header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .spot-header p {
+    color: #aaa;
+    margin: 5px 0;
+  }
+  
+  .spot-chat {
+    margin-top: 20px;
+    flex-grow: 1; /* Allow the chat area to grow */
+  }
+  
+  .spot-messages {
+    height: 300px; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    border: 1px solid rgb(242, 255, 0);;
+    background-color: #1F1F1F; /* Match the container's background */
+    border-radius: 10px; /* Match the rounded style */
+  }
+  
+  .user-query {
+    text-align: right;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .spot-response {
+    background-color: #400000;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .spot-response h2,
+  .spot-response h3 {
+    margin: 10px 0;
+  }
+  
+  .spot-response p,
+  .spot-response ul {
+    color: #fff;
+  }
+  
+  .spot-input {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .spot-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #333; /* Match the input background */
+    color: white; /* Input text color */
+  }
+  
+  .spot-input button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  /* Custom Scrollbar Styles */
+  .spot-messages {
+    height: 300px; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    border: 1px solid rgb(242, 255, 0);
+    background-color: #1F1F1F; /* Match the container's background */
+    border-radius: 10px; /* Match the rounded style */
+  }
+  
+  /* For WebKit browsers (Chrome, Safari) */
+  .spot-messages::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  .spot-messages::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2); /* Track background */
+    border-radius: 10px; /* Rounded corners for track */
+  }
+  
+  .spot-messages::-webkit-scrollbar-thumb {
+    background: rgb(242, 255, 0); /* Scrollbar color */
+    border-radius: 10px; /* Rounded corners for the thumb */
+  }
+  
+  .spot-messages::-webkit-scrollbar-thumb:hover {
+    background: rgba(242, 255, 0, 0.8); /* Darker color on hover */
+  }
+  
+  /* For Firefox */
+  .spot-messages {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: rgb(242, 255, 0) rgba(0, 0, 0, 0.2); /* Thumb color and track color */
+  }
+  
